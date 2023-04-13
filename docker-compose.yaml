@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  spent_logger_bot:
+    image: spent_logger_bot
+    container_name: spent_bot
+    environment:
+      token: 'your_token'
+      sheet_id: 'your_sheet_id'
+      family_member_1: family_member_1_telegram_id
+      family_member_2: family_member_2_telegram_id
+      dashboard_url: 'your_datastudio_link_to_dashboard'
+      sheet_url: 'your_google_link_to_sheet'
+    restart: always
